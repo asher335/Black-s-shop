@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Black's Shop — boutique de produits numériques modernes, conçue pour mobile et pensée pour la vente rapide via WhatsApp."
+    />
+    <title>Black's Shop | Boutique digitale</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand-block">
+          <div class="brand-mark">B</div>
+          <div>
+            <p class="brand-name">Black's Shop</p>
+            <small>Produits numériques</small>
+          </div>
+        </div>
+
+        <nav class="main-nav" aria-label="Navigation principale">
+          <a href="#accueil">Accueil</a>
+          <a href="#boutique">Boutique</a>
+          <a href="#avantages">Pourquoi nous</a>
+        </nav>
+
+        <button class="cart-button" id="cartButton" aria-label="Ouvrir le panier">
+          <span>Panier</span>
+          <strong id="cartCount">0</strong>
+        </button>
+      </header>
+
+      <main>
+        <section class="hero" id="accueil">
+          <div class="hero-copy">
+            <span class="eyebrow">Boutique mobile • livraison digitale</span>
+            <h1>Des ressources digitales utiles pour lancer plus vite.</h1>
+            <p>
+              Découvre des packs premium, des modèles, des systèmes et des outils
+              conçus pour aider les entrepreneurs, créateurs et petites entreprises à
+              vendre et à se développer facilement.
+            </p>
+
+            <div class="hero-actions">
+              <a class="primary-button" href="#boutique">Voir les produits</a>
+              <a class="secondary-button" href="https://wa.me/261340000000?text=Bonjour%20Black's%20Shop%2C%20je%20souhaite%20une%20demande%20rapide." target="_blank" rel="noreferrer">Commander sur WhatsApp</a>
+            </div>
+
+            <ul class="mini-stats">
+              <li><strong>6+</strong><span>Produits</span></li>
+              <li><strong>24h</strong><span>Livraison</span></li>
+              <li><strong>100%</strong><span>Digital</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" aria-label="Produits premium Black's Shop">
+            <div class="product-showcase">
+              <div class="showcase-card showcase-card-main">
+                <span class="badge">Best seller</span>
+                <h3>Mini Brand Kit</h3>
+                <p>Design, contenu et système de vente pour lancer votre marque.</p>
+                <div class="showcase-price">100 000 Ar</div>
+              </div>
+              <div class="showcase-card showcase-card-secondary">
+                <h4>Social Media Pack</h4>
+                <p>Templates prêts à publier</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="features container" id="avantages">
+          <div class="feature-item">
+            <span>📱</span>
+            <h3>Optimisé mobile</h3>
+            <p>Parfait pour commander depuis smartphone.</p>
+          </div>
+          <div class="feature-item">
+            <span>🛒</span>
+            <h3>Panier simple</h3>
+            <p>Ajoute, modifie et commande en quelques gestes.</p>
+          </div>
+          <div class="feature-item">
+            <span>💬</span>
+            <h3>Commande rapide</h3>
+            <p>Validation directe via WhatsApp avec résumé automatique.</p>
+          </div>
+          <div class="feature-item">
+            <span>⚡</span>
+            <h3>Livraison instantanée</h3>
+            <p>Accès immédiat après paiement ou confirmation.</p>
+          </div>
+        </section>
+
+        <section class="catalog section-spacing" id="boutique">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">Boutique</span>
+              <h2>Produits populaires</h2>
+            </div>
+            <a href="#boutique" class="text-link">Commander maintenant</a>
+          </div>
+
+          <div class="products-grid" id="productGrid" aria-live="polite"></div>
+        </section>
+      </main>
+
+      <aside class="cart-panel" id="cartPanel" aria-label="Panier d'achat">
+        <div class="cart-header">
+          <h3>Mon panier</h3>
+          <button class="close-cart" id="closeCart" aria-label="Fermer le panier">×</button>
+        </div>
+
+        <div id="cartItems" class="cart-items"></div>
+
+        <div class="cart-summary">
+          <div class="summary-row">
+            <span>Total</span>
+            <strong id="cartTotal">0 Ar</strong>
+          </div>
+          <button class="checkout-button" id="checkoutButton">Commander via WhatsApp</button>
+        </div>
+      </aside>
+
+      <div class="cart-overlay" id="cartOverlay"></div>
+
+      <footer class="site-footer">
+        <div>
+          <p class="brand-name footer-brand">Black's Shop</p>
+          <small>Made with ❤️ by Black Asher</small>
+        </div>
+        <div class="footer-links">
+          <a href="https://wa.me/261340000000?text=Bonjour%20Black's%20Shop" target="_blank" rel="noreferrer">WhatsApp</a>
+          <a href="#boutique">Boutique</a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
